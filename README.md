@@ -1,5 +1,5 @@
 # actions
-Github Actions utbedret av jactor-rises
+Github Actions opprettet av jactor-rises
 
 ### Continuous integration
 [![build actions](https://github.com/jactor-rises/actions/actions/workflows/ci.yaml/badge.svg)](https://github.com/jactor-rises/actions/actions/workflows/ci.yaml)
