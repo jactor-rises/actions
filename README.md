@@ -10,11 +10,41 @@ informasjon om den som forårsaker en workflow til å bli utført.
 
 ### Release log
 
-Action | Versjon | Endringstype | Beskrivelse
----|---|---|---
-build-node-action | v1.0.0 | Opprettet | Bygger github action ved hjelp av node og ncc
-commit | v1.0.0 | Opprettet | Commit endring av files i et github repo og push til "origin"
-setup-maven | v1.0.0 | Opprettet | Sets up repository settings for a maven build
-tag | v1.0.0 | Opprettet | "Tag" release versjon lages på bakgrunn av "tagged snapshot" versjon
-tag-snapshot | v1.0.0 | Opprettet | "Bump" av "snapshot" versjon ved bruk av git tag
-verify-maven-dependencies | v1.0.0 | Opprettet | Verifiserer at maven-bygg ikke inneholder SNAPSHOT avhengigheter
+#### build-node-action
+
+Versjon | Endringstype | Beskrivelse
+---|---|---
+v1.0.1 | Endret | `action-core`: `1.5.0` -> `1.6.0`
+v1.0.0 | Opprettet | Bygger github action ved hjelp av node og ncc
+
+#### commit
+
+Versjon | Endringstype | Beskrivelse
+---|---|---
+v1.0.1 | Endret | `action-core`: `1.5.0` -> `1.6.0`
+v1.0.0 | Opprettet | Commit endring av files i et github repo og push til "origin"
+
+#### setup-maven
+
+Versjon | Endringstype | Beskrivelse
+---|---|---
+v1.0.0 | Opprettet | Sets up repository settings for a maven build
+
+#### tag
+
+Versjon | Endringstype | Beskrivelse
+---|---|---
+v1.0.1 | Endret | `action-core`: `1.5.0` -> `1.6.0`
+v1.0.0 | Opprettet | "Tag" release versjon lages på bakgrunn av "tagged snapshot" versjon
+
+#### tag-snapshot
+
+Versjon | Endringstype | Beskrivelse
+---|---|---
+v1.0.0 | Opprettet | "Bump" av "snapshot" versjon ved bruk av git tag
+
+#### verify-maven-dependencies
+
+Versjon | Endringstype | Beskrivelse
+---|---|---
+v1.0.0 | Opprettet | Verifiserer at maven-bygg ikke inneholder SNAPSHOT avhengigheter

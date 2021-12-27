@@ -45,7 +45,7 @@ jobs:
         run: echo ::set-output name=timestamp::$(date +"%Y-%m-%d:%T")
       - uses: jactor-rises/actions/commit@v1.0.0-commit
         with:
-          commit_message: "actions/build-node-action@${{ steps.now.outputs.timestamp }}"
+          commit_message: "build-node-action@${{ steps.now.outputs.timestamp }}"
           pattern: .
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
