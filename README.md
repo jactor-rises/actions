@@ -14,12 +14,14 @@ informasjon om den som forårsaker en workflow til å bli utført.
 
 Versjon | Endringstype | Beskrivelse
 ---|---|---
+v1.0.1 | Endret | `action-core`: `1.5.0` -> `1.6.0`
 v1.0.0 | Opprettet | Bygger github action ved hjelp av node og ncc
 
 #### commit
 
 Versjon | Endringstype | Beskrivelse
 ---|---|---
+v1.0.1 | Endret | `action-core`: `1.5.0` -> `1.6.0`
 v1.0.0 | Opprettet | Commit endring av files i et github repo og push til "origin"
 
 #### setup-maven
@@ -32,6 +34,7 @@ v1.0.0 | Opprettet | Sets up repository settings for a maven build
 
 Versjon | Endringstype | Beskrivelse
 ---|---|---
+v1.0.1 | Endret | `action-core`: `1.5.0` -> `1.6.0`
 v1.0.0 | Opprettet | "Tag" release versjon lages på bakgrunn av "tagged snapshot" versjon
 
 #### tag-snapshot
