@@ -2663,9 +2663,10 @@ const exec = __webpack_require__(960);
 
 async function run() {
   try {
+    const artifactFolder = core.getInput('artifact_folder');
 
     // Execute tag bash script
-    await exec.exec(__webpack_require__.ab + "build.sh");
+    await exec.exec(__webpack_require__.ab + "build.sh", [artifactFolder]);
 
   } catch (error) {
     core.setFailed(error.message);

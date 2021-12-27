@@ -2605,9 +2605,9 @@ async function run() {
 
     // Execute release bash script
     await exec.exec(
-        `bash ${__dirname}/../release.sh ${isReleaseCandidate} ${newSnapshotVersion} ${releaseVersion} ${isCommitTag}`
+        `bash ${__dirname}/../deploy.sh`,
+        [isReleaseCandidate, newSnapshotVersion, releaseVersion, isCommitTag]
     );
-
   } catch (error) {
     core.setFailed(error.message);
   }

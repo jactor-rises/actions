@@ -17,49 +17,49 @@ jobs:
       - name: Debug workspace
         run: env
       - name: Install git-commit
-        uses: jactor-rises/actions/node-build-action@feature/release
+        uses: jactor-rises/actions/node-build-action@v2.0.0-node-build-action
         with:
           artifact_folder: actions/git-commit
       - name: Install git-commit-n-tag
-        uses: jactor-rises/actions/node-build-action@feature/release
+        uses: jactor-rises/actions/node-build-action@v2.0.0-node-build-action
         with:
           artifact_folder: actions/git-commit-n-tag
       - name: Install git-tag
-        uses: jactor-rises/actions/node-build-action@feature/release
+        uses: jactor-rises/actions/node-build-action@v2.0.0-node-build-action
         with:
           artifact_folder: actions/git-tag
       - name: Install git-tag-snapshot
-        uses: jactor-rises/actions/node-build-action@feature/release
+        uses: jactor-rises/actions/node-build-action@v2.0.0-node-build-action
         with:
           artifact_folder: actions/git-tag-snapshot
       - name: Install maven-deploy
-        uses: jactor-rises/actions/node-build-action@feature/release
+        uses: jactor-rises/actions/node-build-action@v2.0.0-node-build-action
         with:
           artifact_folder: actions/maven-deploy
       - name: Install maven-prepare-deploy
-        uses: jactor-rises/actions/node-build-action@feature/release
+        uses: jactor-rises/actions/node-build-action@v2.0.0-node-build-action
         with:
           artifact_folder: actions/maven-prepare-deploy
       - name: Install maven-setup
-        uses: jactor-rises/actions/node-build-action@feature/release
+        uses: jactor-rises/actions/node-build-action@v2.0.0-node-build-action
         with:
           artifact_folder: actions/maven-setup
       - name: Install maven-verify-dependencies
-        uses: jactor-rises/actions/node-build-action@feature/release
+        uses: jactor-rises/actions/node-build-action@v2.0.0-node-build-action
         with:
           artifact_folder: actions/maven-verify-dependencies
       - name: Install maven-verify-deploy
-        uses: jactor-rises/actions/node-build-action@feature/release
+        uses: jactor-rises/actions/node-build-action@v2.0.0-node-build-action
         with:
           artifact_folder: actions/maven-verify-deploy
       - name: Install node-build-action
-        uses: jactor-rises/actions/node-build-action@feature/release
+        uses: jactor-rises/actions/node-build-action@v2.0.0-node-build-action
         with:
           artifact_folder: actions/node-build-action
       - name: Generate timestamp
         id: now
         run: echo ::set-output name=timestamp::$(date +"%Y-%m-%d:%T")
-      - uses: jactor-rises/actions/git-commit@feature/release
+      - uses: jactor-rises/actions/git-commit@v2.0.0-node-build-action
         with:
           commit_message: "node-build-action@${{ steps.now.outputs.timestamp }}"
           pattern: .
